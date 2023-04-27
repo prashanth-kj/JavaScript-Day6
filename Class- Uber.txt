@@ -7,15 +7,14 @@ class Uber{
         this.pickup_point=pickup_point;
         this.drop_point=drop_point;
         this.basePrice=basePrice;
-        this.distanceInKM=distanceInKM;
-        
-        
+        this.distanceInKM=distanceInKM;   
     }
     
      price_Cal()
-      {   // assume 1 km=Rs.20
+      {  
+          // assume 1 km=Rs.20
           
-         return `Total Price=${this.basePrice + (this.distanceInKM * 20)}`
+           return `Total Price=${this.basePrice + (this.distanceInKM * 20)}`
       }
 
 }
