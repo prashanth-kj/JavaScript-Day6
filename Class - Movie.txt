@@ -1,0 +1,20 @@
+class Movie{
+    
+    constructor(title,stdio,rating="PG")
+    {
+        this.a= title;
+        this.b= stdio;
+        this.c=rating
+    }
+    
+    getPG(){
+        
+         return [this.a, this.b, this.c]
+    }
+
+        
+}
+let  obj= new Movie("Casino Royale","Eon Productions","PG13");
+console.log([`${obj.a}  ${obj.b}  ${obj.c}`]);
+let  obj1= new Movie("Casino Royale","Eon Productions");
+console.log(obj1.getPG());

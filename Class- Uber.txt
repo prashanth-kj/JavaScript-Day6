@@ -1,0 +1,30 @@
+class Uber{
+    
+    constructor(vehicle_type,vehicle_name,pickup_point,drop_point,basePrice,distanceInKM) 
+    {
+        this.vehicle_type=vehicle_type;
+        this.vehicle_name=vehicle_name;
+        this.pickup_point=pickup_point;
+        this.drop_point=drop_point;
+        this.basePrice=basePrice;
+        this.distanceInKM=distanceInKM;
+        
+        
+    }
+    
+     price_Cal()
+      {   // assume 1 km=Rs.20
+          
+         return `Total Price=${this.basePrice + (this.distanceInKM * 20)}`
+      }
+
+}
+
+let obj1= new Uber("Car","BMW","Paramakudi","Madurai",200,45);
+console.log(obj1);
+console.log(obj1.price_Cal());
+
+
+let obj2= new Uber("auto","bajaj","Paramakudi","Ramnad",100,20);
+console.log(obj2);
+console.log(obj2.price_Cal());

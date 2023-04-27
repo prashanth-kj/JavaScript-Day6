@@ -1,0 +1,16 @@
+class Person{
+    
+    constructor(name,email,mobile,gender,age,degree)
+    {
+        this.name=name;
+        this.email=email;
+        this.mobile=mobile;
+        this.gender=gender;
+        this.age=age;
+        this.degree=degree;
+    }
+    
+}
+
+let obj =new Person("prasanth","prasanth@gmail.com","8940213051","Male",24,"BE");
+console.log(obj);

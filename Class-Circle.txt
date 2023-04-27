@@ -1,0 +1,28 @@
+class Circle{
+    
+     constructor(radius,color)
+     {  
+         this.a= radius;
+         this.b=color;
+     }
+     
+    toString()
+    {
+        return `Circle [radius=${this.a} color=${this.b}]`
+    }
+    
+    getArea()
+     {
+         return 3.14 * this.a*this.a;
+     }
+    getCircumference()
+    {
+        return  2 * 3.14 * this.a;
+    }
+}
+
+let obj =new Circle(7.0, "red");
+ 
+console.log(obj.toString());
+console.log(obj.getArea());
+console.log(obj.getCircumference());
